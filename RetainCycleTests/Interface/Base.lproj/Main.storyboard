@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgC-rj-tUB">
-                                <rect key="frame" x="150" y="216" width="48" height="30"/>
+                                <rect key="frame" x="150" y="91" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Push B"/>
                                 <connections>
@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkO-FS-0xN">
-                                <rect key="frame" x="150" y="280" width="49" height="30"/>
+                                <rect key="frame" x="247" y="91" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Push C"/>
                                 <connections>
@@ -43,7 +43,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dom-DL-wRn">
-                                <rect key="frame" x="150" y="346" width="49" height="30"/>
+                                <rect key="frame" x="53" y="144" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Push D"/>
                                 <connections>
@@ -51,19 +51,91 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pw5-VR-l2s">
-                                <rect key="frame" x="150" y="165" width="48" height="30"/>
+                                <rect key="frame" x="53" y="91" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Push A"/>
                                 <connections>
-                                    <action selector="go:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vXF-3U-ZM2"/>
+                                    <action selector="pushA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zIJ-IC-Wmo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rc9-se-1ll">
-                                <rect key="frame" x="151" y="410" width="47" height="30"/>
+                                <rect key="frame" x="151" y="144" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Push E"/>
                                 <connections>
                                     <action selector="pushE:" destination="BYZ-38-t0r" eventType="touchUpInside" id="akL-YN-tDU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daC-am-uXt">
+                                <rect key="frame" x="53" y="256" width="223" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back and Do Important Thing"/>
+                                <connections>
+                                    <action selector="backImportantThing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vZR-Md-mKa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7K-8U-TaR">
+                                <rect key="frame" x="306" y="30" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bfk-s0-E0F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ga0-By-hR3">
+                                <rect key="frame" x="53" y="353" width="243" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back and Do Important Thing Weak"/>
+                                <connections>
+                                    <action selector="backImportantThingWeak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhY-il-h4G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOU-sj-oYg">
+                                <rect key="frame" x="30" y="302" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back and Do Important Thing Capture List"/>
+                                <connections>
+                                    <action selector="backImportantThingCL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QyD-rU-KyC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvS-Ib-hw7">
+                                <rect key="frame" x="247" y="144" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Push F"/>
+                                <connections>
+                                    <action selector="pushF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J7Z-IF-QOH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vd-Eg-6GU">
+                                <rect key="frame" x="53" y="198" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Push G"/>
+                                <connections>
+                                    <action selector="pushG:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oeC-j3-5Zd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3V-bc-dwB">
+                                <rect key="frame" x="102" y="484" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Do Thing Completion"/>
+                                <connections>
+                                    <action selector="doThingClosure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GZx-ks-ut2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSy-V7-KYy">
+                                <rect key="frame" x="81" y="541" width="187" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Do Thing Completion Weak"/>
+                                <connections>
+                                    <action selector="doThingClosureWeak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZFt-yI-Ons"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z07-bp-Zbc">
+                                <rect key="frame" x="26" y="400" width="324" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back, Do Important Thing Weak Before Dismiss"/>
+                                <connections>
+                                    <action selector="doThingBeforeDismiss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dUU-hM-fUO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,6 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-102.5" y="30.5"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81A0AA6D206D8CAC00AE6E21 /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A0AA6C206D8CAC00AE6E21 /* Thing.swift */; };
+		81E2FA77207AC33E00D410EC /* SuperImportantThingDoer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2FA76207AC33E00D410EC /* SuperImportantThingDoer.swift */; };
 		81F6A1FF206D81A0002466FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F6A1FE206D81A0002466FD /* AppDelegate.swift */; };
 		81F6A201206D81A0002466FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F6A200206D81A0002466FD /* ViewController.swift */; };
 		81F6A204206D81A0002466FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F6A202206D81A0002466FD /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81A0AA6C206D8CAC00AE6E21 /* Thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
+		81E2FA76207AC33E00D410EC /* SuperImportantThingDoer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperImportantThingDoer.swift; sourceTree = "<group>"; };
 		81F6A1FB206D81A0002466FD /* RetainCycleTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetainCycleTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F6A1FE206D81A0002466FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81F6A200206D81A0002466FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81E2FA71207AC2D200D410EC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				81E2FA75207AC30C00D410EC /* Shared Center */,
+				81E2FA74207AC30600D410EC /* Data */,
+				81F6A1FE206D81A0002466FD /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		81E2FA72207AC2D900D410EC /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				81F6A200206D81A0002466FD /* ViewController.swift */,
+				81F6A202206D81A0002466FD /* Main.storyboard */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		81E2FA73207AC2E100D410EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				81F6A205206D81A0002466FD /* Assets.xcassets */,
+				81F6A20A206D81A0002466FD /* Info.plist */,
+				81F6A207206D81A0002466FD /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		81E2FA74207AC30600D410EC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				81A0AA6C206D8CAC00AE6E21 /* Thing.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		81E2FA75207AC30C00D410EC /* Shared Center */ = {
+			isa = PBXGroup;
+			children = (
+				81E2FA76207AC33E00D410EC /* SuperImportantThingDoer.swift */,
+			);
+			path = "Shared Center";
+			sourceTree = "<group>";
+		};
 		81F6A1F2206D81A0002466FD = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +103,9 @@
 		81F6A1FD206D81A0002466FD /* RetainCycleTests */ = {
 			isa = PBXGroup;
 			children = (
-				81F6A1FE206D81A0002466FD /* AppDelegate.swift */,
-				81F6A200206D81A0002466FD /* ViewController.swift */,
-				81F6A202206D81A0002466FD /* Main.storyboard */,
-				81F6A205206D81A0002466FD /* Assets.xcassets */,
-				81F6A207206D81A0002466FD /* LaunchScreen.storyboard */,
-				81F6A20A206D81A0002466FD /* Info.plist */,
+				81E2FA71207AC2D200D410EC /* Application */,
+				81E2FA72207AC2D900D410EC /* Interface */,
+				81E2FA73207AC2E100D410EC /* Supporting Files */,
 			);
 			path = RetainCycleTests;
 			sourceTree = "<group>";
@@ -137,6 +183,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				81F6A201206D81A0002466FD /* ViewController.swift in Sources */,
+				81E2FA77207AC33E00D410EC /* SuperImportantThingDoer.swift in Sources */,
+				81A0AA6D206D8CAC00AE6E21 /* Thing.swift in Sources */,
 				81F6A1FF206D81A0002466FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,9 +322,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ZBHHJ9456;
-				INFOPLIST_FILE = RetainCycleTests/Info.plist;
+				INFOPLIST_FILE = "RetainCycleTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.RetainCycleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,9 +338,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ZBHHJ9456;
-				INFOPLIST_FILE = RetainCycleTests/Info.plist;
+				INFOPLIST_FILE = "RetainCycleTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.RetainCycleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
